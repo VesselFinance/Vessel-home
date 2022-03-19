@@ -516,9 +516,9 @@ const TokenomicsPage = () => {
 								</TableContent>
 								<TableContentTitle>Protocol Vault</TableContentTitle>
 								<TableContentPercent>33.00%</TableContentPercent>
-								<TableContent>
+								<TableContentDesc>
 									All allocated tokens are locked to the Vessel vault upon TGE.
-								</TableContent>
+								</TableContentDesc>
 							</ChartLegendGrid>
 							<ChartLegendGrid>
 								<TableContent>
@@ -526,7 +526,7 @@ const TokenomicsPage = () => {
 								</TableContent>
 								<TableContentTitle>Protocol Burn</TableContentTitle>
 								<TableContentPercent>33.00%</TableContentPercent>
-								<TableContent>All allocated tokens are burnt upon TGE.</TableContent>
+								<TableContentDesc>All allocated tokens are burnt upon TGE.</TableContentDesc>
 							</ChartLegendGrid>
 						</TokenomicsTable>
 					</SectionWrapper>
