@@ -7,6 +7,7 @@ import lock from '../../../assets/images/lock_cube.png';
 import scales from '../../../assets/images/scales_zoomed_cropped_4.png';
 import InformationButtonAccent from '../../Button/InformationButtonAccent/InformationButtonAccent';
 import PrimaryButton from '../../Button/Primary/PrimaryButton';
+import SecondaryButton from '../../Button/Secondary/SecondaryButton';
 import bp from '../../Theme/breakpoints';
 import Footer from '../../Navigation/Footer/Footer';
 import blueGlow from '../../../assets/images/BLUE_round.svg';
@@ -335,6 +336,17 @@ const HomePage = () => {
 										>
 											Launch dApp
 										</PrimaryButton>
+										<SecondaryButton
+											onClick={e => {
+												e.preventDefault();
+												window.open(
+													'https://pancake.kiemtienonline360.com/#/swap?outputCurrency=0x16DF065c5FceE6BCc66837780D8e6f2798E0ca2B',
+													'_blank',
+												);
+											}}
+										>
+											Buy $VSL
+										</SecondaryButton>
 									</ButtonContainer>
 								</HeroTextWrapper>
 							</HeroWrapper>
