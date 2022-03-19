@@ -327,7 +327,14 @@ const HomePage = () => {
 										<HeroPara>The first synthetic deflationary DeFi mutual fund.</HeroPara>
 									</AnimationOnScroll>
 									<ButtonContainer>
-										<PrimaryButton>Launch dApp</PrimaryButton>
+										<PrimaryButton
+											onClick={e => {
+												e.preventDefault();
+												window.open('http://app.vessel.finance/#/', '_blank');
+											}}
+										>
+											Launch dApp
+										</PrimaryButton>
 									</ButtonContainer>
 								</HeroTextWrapper>
 							</HeroWrapper>

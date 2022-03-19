@@ -105,7 +105,14 @@ const MobileMenu = ({ toggleMobileMenu }) => {
 			</NavItemMobile>
 			<Divider />
 			<ButtonContainer>
-				<PrimaryButton>Launch dApp</PrimaryButton>
+				<PrimaryButton
+					onClick={e => {
+						e.preventDefault();
+						window.open('http://app.vessel.finance/#/', '_blank');
+					}}
+				>
+					Launch dApp
+				</PrimaryButton>
 			</ButtonContainer>
 		</StyledNav>
 	);
