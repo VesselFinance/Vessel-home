@@ -332,7 +332,7 @@ const RoadmapPage = () => {
 				component={<SSTimg src={SSTarrow} alt="sst" />}
 			/>
 			<PageWrapper>
-				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true">
+				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
 					<AboutSection>
 						<HeroSectionWrapper>
 							<AboutWrapperTextLeft>
@@ -352,7 +352,7 @@ const RoadmapPage = () => {
 				</AnimationOnScroll>
 
 				<BackgroundBlurRight src={blueGlow} alt="Green Glow" />
-				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true">
+				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
 					<Carousel
 						showArrows={false}
 						showStatus={false}

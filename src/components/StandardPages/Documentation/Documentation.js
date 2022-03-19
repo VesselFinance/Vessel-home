@@ -246,7 +246,7 @@ const WhitepaperPage = () => {
 				component={<SSTimg src={SSTarrow} alt="sst" />}
 			/>
 			<PageWrapper>
-				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true">
+				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
 					<AboutSection>
 						<SectionWrapper>
 							<AboutWrapperTextLeft>
@@ -264,7 +264,7 @@ const WhitepaperPage = () => {
 				</AnimationOnScroll>
 
 				<BackgroundBlurLeft src={darkBlueGlow} alt="Green Glow" />
-				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true">
+				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
 					<AboutSection>
 						<SectionWrapper>
 							<AboutWrapperTextRight>
@@ -300,7 +300,7 @@ const WhitepaperPage = () => {
 				</AnimationOnScroll>
 
 				<BackgroundBlurRight src={darkBlueGlow} alt="Green Glow" />
-				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true">
+				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
 					<AboutSection>
 						<SectionWrapper>
 							<AboutWrapperTextRight>

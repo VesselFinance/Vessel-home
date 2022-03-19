@@ -366,7 +366,7 @@ const TokenomicsPage = () => {
 				component={<SSTimg src={SSTarrow} alt="sst" />}
 			/>
 			<PageWrapper>
-				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true">
+				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
 					<AboutSection>
 						<SectionWrapper>
 							<AboutWrapperTextLeft>
@@ -385,7 +385,7 @@ const TokenomicsPage = () => {
 				</AnimationOnScroll>
 
 				<BackgroundBlurLeft src={pinkGlow} alt="Pink Glow" />
-				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true">
+				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
 					<AboutSection>
 						<SectionWrapper>
 							<AboutWrapperTextRight>
@@ -416,7 +416,7 @@ const TokenomicsPage = () => {
 				</AnimationOnScroll>
 
 				<BackgroundBlurRight src={pinkGlow} alt="Green Glow" />
-				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true">
+				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
 					<AboutSection>
 						<SectionWrapper>
 							<AboutWrapperTextRight>

@@ -312,7 +312,7 @@ const HomePage = () => {
 			/>
 			<BackgroundBlurCenter src={WHB} alt="header wave" />
 			<PageWrapper>
-				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true">
+				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
 					<AboutSection>
 						<HeroSectionWrapper>
 							<HeroWrapper>
@@ -320,10 +320,10 @@ const HomePage = () => {
 									<HeroImg src={ETF_big} alt="etf-img" />
 								</AboutImageParent>
 								<HeroTextWrapper>
-									<AnimationOnScroll animateIn="animate__fadeInUp" animateOnce="true">
+									<AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true}>
 										<HeroSectionHeader>Welcome Aboard</HeroSectionHeader>
 									</AnimationOnScroll>
-									<AnimationOnScroll animateIn="animate__fadeInUp" animateOnce="true" delay="500">
+									<AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true} delay="500">
 										<HeroPara>The first synthetic deflationary DeFi mutual fund.</HeroPara>
 									</AnimationOnScroll>
 									<ButtonContainer>
@@ -336,7 +336,7 @@ const HomePage = () => {
 				</AnimationOnScroll>
 
 				<BackgroundBlurRight src={greenGlow} alt="Green Glow" />
-				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true">
+				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
 					<AboutSection>
 						<SectionWrapper>
 							<AboutWrapperTextLeft>
@@ -363,7 +363,7 @@ const HomePage = () => {
 
 				<BackgroundBlurLeft src={blueGlow} alt="blue Glow" />
 
-				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true">
+				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
 					<AboutSection>
 						<SectionWrapper>
 							<AboutWrapperTextRight>
@@ -390,7 +390,7 @@ const HomePage = () => {
 
 				<BackgroundBlurRight src={darkBlueGlow} alt="dark blue Glow" />
 
-				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true">
+				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
 					<AboutSection>
 						<SectionWrapper>
 							<AboutWrapperTextLeft>
@@ -417,7 +417,7 @@ const HomePage = () => {
 
 				<BackgroundBlurLeft src={pinkGlow} alt="pink Glow" />
 
-				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true">
+				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
 					<AboutSection>
 						<SectionWrapper>
 							<AboutWrapperTextRight>

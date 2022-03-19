@@ -282,7 +282,7 @@ const AboutPage = () => {
 				component={<SSTimg src={SSTarrow} alt="sst" />}
 			/>
 			<PageWrapper>
-				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true">
+				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
 					<AboutSection>
 						<SectionWrapper>
 							<AboutWrapperTextLeft>
@@ -301,7 +301,7 @@ const AboutPage = () => {
 				</AnimationOnScroll>
 
 				<BackgroundBlurLeft src={greenGlow} alt="Green Glow" />
-				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true">
+				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
 					<AboutSection>
 						<SectionWrapper>
 							<AboutWrapperTextRight>
@@ -335,7 +335,7 @@ const AboutPage = () => {
 				</AnimationOnScroll>
 
 				<BackgroundBlurRight src={greenGlow} alt="Green Glow" />
-				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true">
+				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
 					<AboutSection>
 						<SectionWrapper>
 							<AboutWrapperTextLeft>
@@ -360,7 +360,7 @@ const AboutPage = () => {
 				</AnimationOnScroll>
 
 				<BackgroundBlurLeft src={greenGlow} alt="Green Glow" />
-				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true">
+				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
 					<AboutSection>
 						<SectionWrapper>
 							<AboutWrapperTextRight>
@@ -383,7 +383,7 @@ const AboutPage = () => {
 				</AnimationOnScroll>
 
 				<BackgroundBlurRight src={greenGlow} alt="Green Glow" />
-				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true">
+				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
 					<AboutSection>
 						<SectionWrapper>
 							<AboutWrapperTextLeft>
@@ -404,7 +404,7 @@ const AboutPage = () => {
 				</AnimationOnScroll>
 
 				<BackgroundBlurLeft src={greenGlow} alt="Green Glow" />
-				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true">
+				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
 					<AboutSection>
 						<SectionWrapper>
 							<AboutWrapperTextRight>
@@ -426,7 +426,7 @@ const AboutPage = () => {
 				</AnimationOnScroll>
 
 				<BackgroundBlurRight src={greenGlow} alt="Green Glow" />
-				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce="true">
+				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
 					<AboutSection>
 						<SectionWrapper>
 							<AboutWrapperTextRight>
