@@ -23,7 +23,14 @@ const Menu = () => {
 			<NavItem link="/Roadmap">Roadmap</NavItem>
 			<NavItem link="/Tokenomics">Tokenomics</NavItem>
 			<NavItem link="/Documentation">Documentation</NavItem>
-			<PrimaryButton>Launch dApp</PrimaryButton>
+			<PrimaryButton
+				onClick={e => {
+					e.preventDefault();
+					window.open('http://app.vessel.finance/#/', '_blank');
+				}}
+			>
+				Launch dApp
+			</PrimaryButton>
 		</MenuNav>
 	);
 };
