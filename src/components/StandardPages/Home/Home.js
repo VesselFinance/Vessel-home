@@ -340,7 +340,7 @@ const HomePage = () => {
 											onClick={e => {
 												e.preventDefault();
 												window.open(
-													'https://pancake.kiemtienonline360.com/#/swap?outputCurrency=0x16DF065c5FceE6BCc66837780D8e6f2798E0ca2B',
+													'https://pancake.kiemtienonline360.com/#/swap?outputCurrency=0x575779755f50805d24ed0e65c5cc3a8adc81513e',
 													'_blank',
 												);
 											}}
