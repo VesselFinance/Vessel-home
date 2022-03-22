@@ -23,7 +23,7 @@ import ScrollToTop from 'react-scroll-to-top';
 import { useEffect } from 'react';
 
 const PageWrapper = styled.div`
-	padding: 0 28px 64px 28px;
+	padding: 0px 28px 64px 28px;
 	max-width: 1560px;
 	margin: 0 auto;
 	height: 100%;
@@ -36,6 +36,20 @@ const PageWrapper = styled.div`
 	@media ${bp.xl} {
 		position: relative;
 		max-height: 100%;
+	}
+`;
+
+const AboutSectionHero = styled.section`
+	display: flex;
+	justify-content: space-between;
+	border-radius: 50px;
+	position: relative;
+	background-color: transparent;
+	margin-top: -70px;
+	margin-bottom: -50px;
+	@media ${bp.sm} {
+		margin-top: -50px;
+		margin-bottom: 0px;
 	}
 `;
 
@@ -189,6 +203,7 @@ const BackgroundBlurRight = styled.img`
 
 const BoxContentWrapper = styled.div`
 	display: grid;
+	justify-content: center;
 	grid-template-columns: repeat(1, 1fr);
 	grid-column-gap: 28px;
 	grid-row-gap: 28px;
@@ -217,13 +232,14 @@ const BoxContent = styled.div`
 	color: ${theme.color.text.primary};
 	border: 1px solid rgba(255, 255, 255, 0.5);
 	@media ${bp.sm} {
-		min-width: 300px;
+		width: 36vw;
 	}
 	@media ${bp.lg} {
-		min-width: 320px;
+		width: 24vw;
 	}
 	@media ${bp.xl} {
-		min-width: 400px;
+		width: 24vw;
+		max-width: 410px;
 	}
 `;
 
@@ -283,7 +299,7 @@ const AboutPage = () => {
 			/>
 			<PageWrapper>
 				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
-					<AboutSection>
+					<AboutSectionHero>
 						<SectionWrapper>
 							<AboutWrapperTextLeft>
 								<AboutImageParent></AboutImageParent>
@@ -297,7 +313,7 @@ const AboutPage = () => {
 								</AboutTextWrapperContainer>
 							</AboutWrapperTextLeft>
 						</SectionWrapper>
-					</AboutSection>
+					</AboutSectionHero>
 				</AnimationOnScroll>
 
 				<BackgroundBlurLeft src={greenGlow} alt="Green Glow" />

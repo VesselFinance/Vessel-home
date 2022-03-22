@@ -153,7 +153,6 @@ const RoadmapTitle = styled.h1`
 	font-weight: bold;
 	color: ${props => roadmapColorPicker(props)};
 	font-size: 42px;
-	font-family: 'IBMPlexMono-Light';
 	padding-bottom: 20px;
 	@media ${bp.sm} {
 		font-size: 42px;
@@ -280,6 +279,20 @@ const Divider = styled.hr`
 	}
 `;
 
+const AboutSectionHero = styled.section`
+	display: flex;
+	justify-content: space-between;
+	border-radius: 50px;
+	position: relative;
+	background-color: transparent;
+	margin-top: -20px;
+	margin-bottom: -50px;
+	@media ${bp.sm} {
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+`;
+
 const IndicatorListSelected = styled.li`
 	color: ${theme.color.text.primary};
 	padding: 10px;
@@ -309,6 +322,7 @@ const RoadmapPage = () => {
 		'flex-direction': 'row',
 		'align-content': 'start',
 		'justify-content': 'center',
+		cursor: 'pointer',
 	};
 
 	return (
@@ -333,7 +347,7 @@ const RoadmapPage = () => {
 			/>
 			<PageWrapper>
 				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
-					<AboutSection>
+					<AboutSectionHero>
 						<HeroSectionWrapper>
 							<AboutWrapperTextLeft>
 								<AboutImageParent></AboutImageParent>
@@ -348,7 +362,7 @@ const RoadmapPage = () => {
 								</AboutTextWrapperContainer>
 							</AboutWrapperTextLeft>
 						</HeroSectionWrapper>
-					</AboutSection>
+					</AboutSectionHero>
 				</AnimationOnScroll>
 
 				<BackgroundBlurRight src={blueGlow} alt="Green Glow" />
@@ -408,30 +422,31 @@ const RoadmapPage = () => {
 								</RoadmapTitle>
 								<RoadMapSubParaContainer four>
 									<RoadmapSubPara one>
-										<span style={{ color: '#51ECCD' }}>vsl</span> Whitepaper and smart contract
+										<span style={{ color: '#51ECCD' }}>Vessel</span> yellowpaper, Whitepaper and
+										smart contract
 									</RoadmapSubPara>
 									<RoadmapSubPara one>Developer revisions and audits</RoadmapSubPara>
 									<RoadmapSubPara one>
-										<span style={{ color: '#51ECCD' }}>vsl</span>.finance + app.
-										<span style={{ color: '#01FFFE' }}>vsl.finance</span>
+										<span style={{ color: '#51ECCD' }}>vessel</span>.finance + app.
+										<span style={{ color: '#01FFFE' }}>vessel.finance</span>
 									</RoadmapSubPara>
 								</RoadMapSubParaContainer>
 							</RoadmapPara>
 							<Divider />
 							<RoadmapDescription>
-								<RoadmapDescTitle>• VSL whitepaper and smart contract:</RoadmapDescTitle>
+								<RoadmapDescTitle>• Vessel whitepaper and smart contract:</RoadmapDescTitle>
 								<RoadmapDescPara>
-									write the vessel whitepaper and develop the smart contract that Vessel Protocol
-									operates within.
+									Create the vessel yellowpaper and whitepaper, and develop the smart contract that
+									Vessel Protocol operates within.
 								</RoadmapDescPara>
 								<RoadmapDescTitle>• Developer Revisions:</RoadmapDescTitle>
 								<RoadmapDescPara>
 									Thorough internal testing and revisions of the logic and mathematics of smart
 									contract.
 								</RoadmapDescPara>
-								<RoadmapDescTitle>• Vsl.finance + app.vsl.finance:</RoadmapDescTitle>
+								<RoadmapDescTitle>• Vessel.finance + app.vsl.finance:</RoadmapDescTitle>
 								<RoadmapDescPara>
-									build the vsl.finance website and app.vsl.finance dApp for public access.
+									Build the vessel.finance website and app.vsl.finance dApp for public access.
 								</RoadmapDescPara>
 							</RoadmapDescription>
 						</SectionWrapper>
@@ -443,7 +458,7 @@ const RoadmapPage = () => {
 								<RoadMapSubParaContainer four>
 									<RoadmapSubPara two>ICO, seed funding, private sales</RoadmapSubPara>
 									<RoadmapSubPara two>
-										Third party audit of vsl smart contract and logic
+										Third party audit of Vessel smart contract and logic
 									</RoadmapSubPara>
 								</RoadMapSubParaContainer>
 							</RoadmapPara>
@@ -451,12 +466,12 @@ const RoadmapPage = () => {
 							<RoadmapDescription>
 								<RoadmapDescTitle>• ICO, seed funding, private sales:</RoadmapDescTitle>
 								<RoadmapDescPara>
-									Through conducting ICO, seed funding and private sales, we intend to aim for raising
+									Through conducting ICO, seed funding and private sales, we intend to aim to raising
 									$5,000,000.
 								</RoadmapDescPara>
-								<RoadmapDescTitle>• Third party audit of VSL smart contract:</RoadmapDescTitle>
+								<RoadmapDescTitle>• Third party audit of Vessel smart contract:</RoadmapDescTitle>
 								<RoadmapDescPara>
-									Recieve security audit certificate for trust and authenticity.
+									Receive security audit certificate for trust and authenticity.
 								</RoadmapDescPara>
 							</RoadmapDescription>
 						</SectionWrapper>
@@ -466,7 +481,7 @@ const RoadmapPage = () => {
 									Q4 <span style={{ color: '#fff' }}>2022:</span>
 								</RoadmapTitle>
 								<RoadMapSubParaContainer four>
-									<RoadmapSubPara three>T1 Exchange listings</RoadmapSubPara>
+									<RoadmapSubPara three>T1 exchange listings</RoadmapSubPara>
 									<RoadmapSubPara three milestone>
 										V2: Seigniorage shares peg
 									</RoadmapSubPara>
@@ -475,12 +490,12 @@ const RoadmapPage = () => {
 							</RoadmapPara>
 							<Divider />
 							<RoadmapDescription>
-								<RoadmapDescTitle>• T1 Exchange listings:</RoadmapDescTitle>
+								<RoadmapDescTitle>• T1 exchange listings:</RoadmapDescTitle>
 								<RoadmapDescPara>
 									List the VSL token on popular and accessable exchanges for purchasing.
 								</RoadmapDescPara>
 								<RoadmapDescTitle>• V2: Seigniorage shares peg:</RoadmapDescTitle>
-								<RoadmapDescPara>Implement seigniorage into the Vessel Protocol.</RoadmapDescPara>
+								<RoadmapDescPara>Implement Seigniorage into the Vessel Protocol.</RoadmapDescPara>
 								<RoadmapDescTitle>• V2: Custom asset class staking:</RoadmapDescTitle>
 								<RoadmapDescPara>
 									Implement custom asset class staking for investors to be able to invest in their
@@ -495,21 +510,21 @@ const RoadmapPage = () => {
 								</RoadmapTitle>
 								<RoadMapSubParaContainer four>
 									<RoadmapSubPara four milestone>
-										V3: vsl.exchange launch
+										V3: vessel.exchange launch
 									</RoadmapSubPara>
 									<RoadmapSubPara four>V3: Governance of exchange policies</RoadmapSubPara>
 								</RoadMapSubParaContainer>
 							</RoadmapPara>
 							<Divider />
 							<RoadmapDescription>
-								<RoadmapDescTitle>• V3: vsl.exchange launch:</RoadmapDescTitle>
+								<RoadmapDescTitle>• V3: vessel.exchange launch:</RoadmapDescTitle>
 								<RoadmapDescPara>
-									Launch the VSL Exchange Platform for users to exchange tokens.
+									Launch the exchange platform for users to exchange tokens.
 								</RoadmapDescPara>
 								<RoadmapDescTitle>• V3: Governance of exchange policies:</RoadmapDescTitle>
 								<RoadmapDescPara>
-									Implement DAO Governance so that VSL investors are able to vote and have power on
-									the policies of the VSL Exchange Platform.
+									Implement DAO Governance so that Vessel investors are able to vote and have power on
+									the policies of the exchange platform.
 								</RoadmapDescPara>
 							</RoadmapDescription>
 						</SectionWrapper>

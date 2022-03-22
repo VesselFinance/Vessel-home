@@ -219,35 +219,37 @@ const BoxHeaderKey = styled.h1`
 `;
 
 const ChartWrapper = styled.div`
-	height: 250px;
+	height: 50vw;
 	width: 1000px;
+	font-size: 20px;
 	@media ${bp.sm} {
-		height: 500px;
+		height: 400px;
 		width: 700px;
 	}
 	@media ${bp.md} {
-		height: 600px;
+		height: 500px;
 		width: 1000px;
 	}
 	@media ${bp.lg} {
-		height: 600px;
+		height: 500px;
 		width: 1000px;
 	}
 	@media ${bp.xl} {
-		height: 600px;
+		height: 500px;
 		width: 1000px;
 	}
 `;
 
 const TokenomicsTable = styled.div`
 	display: grid;
-	grid-template-columns: 2fr;
-	width: 80%;
+	grid-template-columns: 1fr;
+	width: 105%;
 	justify-content: center;
 	align-content: center;
 	margin-top: 50px;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-top: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
 	background: rgba(0, 0, 0, 0.5);
 	backdrop-filter: blur(10px);
 	border-radius: 16px;
@@ -271,10 +273,10 @@ const TokenomicsTable = styled.div`
 const ChartLegendGrid = styled.div`
 	display: contents;
 	grid-column-gap: 40px;
-	grid-row-gap: 80px;
+	grid-row-gap: 40px;
 	height: 50px;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 	justify-content: space-between;
 	align-items: center;
 	align-content: center;
@@ -318,7 +320,7 @@ const TableContentPercent = styled.div`
 const TableContentDesc = styled.div`
 	display: flex;
 	flex-direction: row;
-	padding: 4px 24px 24px 24px;
+	padding: 4px 8px 24px 24px;
 	text-align: flex-start;
 	color: #aaaaaa;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -335,6 +337,20 @@ const GraphTabCSS = css`
 	border-radius: 50%;
 	display: flex;
 	background-color: ${({ DotColor }) => DotColor || `red`};
+`;
+
+const AboutSectionHero = styled.section`
+	display: flex;
+	justify-content: space-between;
+	border-radius: 50px;
+	position: relative;
+	background-color: transparent;
+	margin-top: -70px;
+	margin-bottom: -50px;
+	@media ${bp.sm} {
+		margin-top: -50px;
+		margin-bottom: 0px;
+	}
 `;
 
 const GraphTab = styled.span`
@@ -367,7 +383,7 @@ const TokenomicsPage = () => {
 			/>
 			<PageWrapper>
 				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
-					<AboutSection>
+					<AboutSectionHero>
 						<SectionWrapper>
 							<AboutWrapperTextLeft>
 								<AboutImageParent></AboutImageParent>
@@ -381,38 +397,7 @@ const TokenomicsPage = () => {
 								</AboutTextWrapperContainer>
 							</AboutWrapperTextLeft>
 						</SectionWrapper>
-					</AboutSection>
-				</AnimationOnScroll>
-
-				<BackgroundBlurLeft src={pinkGlow} alt="Pink Glow" />
-				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
-					<AboutSection>
-						<SectionWrapper>
-							<AboutWrapperTextRight>
-								<AboutTextWrapperContainer>
-									<AboutSectionHeader>Metrics</AboutSectionHeader>
-									<BoxContentWrapper>
-										<BoxContent>
-											<BoxHeaderKey>$1.23</BoxHeaderKey>
-											Current Price
-										</BoxContent>
-										<BoxContent>
-											<BoxHeaderKey>100k</BoxHeaderKey>
-											Holders
-										</BoxContent>
-										<BoxContent>
-											<BoxHeaderKey>3M</BoxHeaderKey>
-											Circulating Supply
-										</BoxContent>
-										<BoxContent>
-											<BoxHeaderKey>10B</BoxHeaderKey>
-											Total Supply
-										</BoxContent>
-									</BoxContentWrapper>
-								</AboutTextWrapperContainer>
-							</AboutWrapperTextRight>
-						</SectionWrapper>
-					</AboutSection>
+					</AboutSectionHero>
 				</AnimationOnScroll>
 
 				<BackgroundBlurRight src={pinkGlow} alt="Green Glow" />

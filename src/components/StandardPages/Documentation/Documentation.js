@@ -194,13 +194,14 @@ const BoxContent = styled.div`
 	color: ${theme.color.text.primary};
 	border: 1px solid rgba(255, 255, 255, 0.5);
 	@media ${bp.sm} {
-		min-width: 300px;
+		width: 36vw;
 	}
 	@media ${bp.lg} {
-		min-width: 320px;
+		width: 24vw;
 	}
 	@media ${bp.xl} {
-		min-width: 400px;
+		width: 24vw;
+		max-width: 410px;
 	}
 `;
 
@@ -220,6 +221,19 @@ const BoxIcon = styled.img`
 	filter: invert(1);
 `;
 
+const AboutSectionHero = styled.section`
+	display: flex;
+	justify-content: space-between;
+	border-radius: 50px;
+	position: relative;
+	background-color: transparent;
+	margin-top: -70px;
+	margin-bottom: -50px;
+	@media ${bp.sm} {
+		margin-top: -50px;
+		margin-bottom: 0px;
+	}
+`;
 const WhitepaperPage = () => {
 	useEffect(() => {
 		window.scrollTo({ top: 0, behavior: 'instant' });
@@ -247,7 +261,7 @@ const WhitepaperPage = () => {
 			/>
 			<PageWrapper>
 				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
-					<AboutSection>
+					<AboutSectionHero>
 						<SectionWrapper>
 							<AboutWrapperTextLeft>
 								<AboutImageParent></AboutImageParent>
@@ -259,6 +273,36 @@ const WhitepaperPage = () => {
 									</AboutPara>
 								</AboutTextWrapperContainer>
 							</AboutWrapperTextLeft>
+						</SectionWrapper>
+					</AboutSectionHero>
+				</AnimationOnScroll>
+
+				<BackgroundBlurRight src={darkBlueGlow} alt="Green Glow" />
+				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
+					<AboutSection>
+						<SectionWrapper>
+							<AboutWrapperTextRight>
+								<AboutTextWrapperContainer>
+									<AboutSectionHeader>Papers</AboutSectionHeader>
+									<BoxContentWrapper>
+										<BoxContent>
+											<BoxHeader>
+												Yellowpaper
+												<BoxIcon src={linkIcon} />
+											</BoxHeader>
+											A technical document outlining the mathematics and algorithms running the
+											Vessel contract.
+										</BoxContent>
+										<BoxContent>
+											<BoxHeader>
+												Whitepaper
+												<BoxIcon src={linkIcon} />
+											</BoxHeader>
+											A general document of the Vessel Contract, it's proposal and it's vision.
+										</BoxContent>
+									</BoxContentWrapper>
+								</AboutTextWrapperContainer>
+							</AboutWrapperTextRight>
 						</SectionWrapper>
 					</AboutSection>
 				</AnimationOnScroll>
@@ -273,13 +317,6 @@ const WhitepaperPage = () => {
 									<BoxContentWrapper>
 										<BoxContent>
 											<BoxHeader>
-												Audit
-												<BoxIcon src={linkIcon} />
-											</BoxHeader>
-											Access our audit certificate and documentation.
-										</BoxContent>
-										<BoxContent>
-											<BoxHeader>
 												Github
 												<BoxIcon src={linkIcon} />
 											</BoxHeader>
@@ -292,35 +329,12 @@ const WhitepaperPage = () => {
 											</BoxHeader>
 											Join the community to ask questions, read updates and more.
 										</BoxContent>
-									</BoxContentWrapper>
-								</AboutTextWrapperContainer>
-							</AboutWrapperTextRight>
-						</SectionWrapper>
-					</AboutSection>
-				</AnimationOnScroll>
-
-				<BackgroundBlurRight src={darkBlueGlow} alt="Green Glow" />
-				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
-					<AboutSection>
-						<SectionWrapper>
-							<AboutWrapperTextRight>
-								<AboutTextWrapperContainer>
-									<AboutSectionHeader>Papers</AboutSectionHeader>
-									<BoxContentWrapper>
 										<BoxContent>
 											<BoxHeader>
-												Whitepaper
+												Audit
 												<BoxIcon src={linkIcon} />
 											</BoxHeader>
-											A general document of the Vessel Contract, it's proposal and it's vision.
-										</BoxContent>
-										<BoxContent>
-											<BoxHeader>
-												Yellowpaper
-												<BoxIcon src={linkIcon} />
-											</BoxHeader>
-											A technical document outlining the mathematics and algorithms running the
-											Vessel Contract.
+											Access our audit certificate and documentation.
 										</BoxContent>
 									</BoxContentWrapper>
 								</AboutTextWrapperContainer>

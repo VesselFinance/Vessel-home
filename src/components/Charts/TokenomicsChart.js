@@ -1,5 +1,5 @@
-import React from 'react';
 import { ResponsivePie } from '@nivo/pie';
+import React, { useLayoutEffect, useState } from 'react';
 
 const pieData = [
 	{
@@ -21,7 +21,7 @@ const pieData = [
 		color: 'hsl(45, 83%, 45%)',
 	},
 	{
-		id: 'Team and Advisors',
+		id: 'Team \n and Advisors',
 		label: 'Team and Advisors',
 		value: 6.6 / 100,
 		color: 'hsl(218, 58%, 75%)',
@@ -65,11 +65,30 @@ const pieData = [
 ];
 
 const Pie = () => {
+	const [pFontSize, setPFontSize] = React.useState('0px');
+
+	useLayoutEffect(() => {
+		function updateSize() {
+			if (window.innerWidth > 900) {
+				setPFontSize('18px');
+			} else if (window.innerWidth > 700) {
+				setPFontSize('16px');
+			} else if (window.innerWidth > 400) {
+				setPFontSize('14px');
+			} else {
+				setPFontSize('8px');
+			}
+		}
+		window.addEventListener('resize', updateSize);
+		updateSize();
+		return () => window.removeEventListener('resize', updateSize);
+	}, []);
+
 	return (
 		<ResponsivePie
 			data={pieData}
 			margin={{ top: 30, right: 40, bottom: 30, left: 40 }}
-			innerRadius={0.5}
+			innerRadius={0.3}
 			padAngle={0.7}
 			valueFormat=" >-0.0~%"
 			cornerRadius={3}
@@ -80,9 +99,11 @@ const Pie = () => {
 			arcLinkLabelsSkipAngle={15}
 			arcLinkLabelsTextColor="#ffffff"
 			arcLinkLabelsThickness={2}
+			arcLinkLabelsStraightLength={17}
 			arcLinkLabelsColor={{ from: 'color' }}
 			arcLabelsSkipAngle={15}
 			arcLabelsTextColor={{ from: 'color', modifiers: [['darker', 2]] }}
+			theme={{ fontSize: pFontSize }}
 		/>
 	);
 };
