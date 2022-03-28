@@ -325,7 +325,9 @@ const HomePage = () => {
 										<HeroSectionHeader>Welcome Aboard</HeroSectionHeader>
 									</AnimationOnScroll>
 									<AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true} delay="500">
-										<HeroPara>The first synthetic deflationary DeFi mutual fund.</HeroPara>
+										<HeroPara>
+											The first deflationary Defi mutual fund based on synthetic reserves
+										</HeroPara>
 									</AnimationOnScroll>
 									<ButtonContainer>
 										<PrimaryButton
@@ -340,7 +342,7 @@ const HomePage = () => {
 											onClick={e => {
 												e.preventDefault();
 												window.open(
-													'https://pancake.kiemtienonline360.com/#/swap?outputCurrency=0x575779755f50805d24ed0e65c5cc3a8adc81513e',
+													'https://pancake.kiemtienonline360.com/#/swap?outputCurrency=0x679a84D59fE5656A980d7E7b2bfBC4A7D1Ce971e',
 													'_blank',
 												);
 											}}
@@ -363,10 +365,10 @@ const HomePage = () => {
 									<AboutImg src={vault} alt="vault" />
 								</AboutImageParent>
 								<AboutTextWrapperContainer>
-									<AboutSectionHeader>Synthetic Mutual Fund.</AboutSectionHeader>
+									<AboutSectionHeader>Synthetic Mutual Fund</AboutSectionHeader>
 									<AboutPara>
 										Our token is backed by a carefully selected collection of blue-chip
-										cryptocurrencies.
+										cryptocurrencies
 									</AboutPara>
 									<ButtonContainer>
 										{/* anchor link to synthetic mutual fund About section */}
@@ -393,7 +395,7 @@ const HomePage = () => {
 									<AboutSectionHeader>Do Better Than The Market.</AboutSectionHeader>
 									<AboutPara>
 										Our protocol exposes you to a variety of top-tier tokens that are set to do
-										better than most.
+										better than most
 									</AboutPara>
 									<ButtonContainer>
 										{/* anchor link to market analysis About section */}
@@ -417,10 +419,10 @@ const HomePage = () => {
 									<AboutImg src={lock} alt="lock" />
 								</AboutImageParent>
 								<AboutTextWrapperContainer>
-									<AboutSectionHeader>Maximal Safety, Minimal Risk.</AboutSectionHeader>
+									<AboutSectionHeader>Maximal Safety, Minimal Risk</AboutSectionHeader>
 									<AboutPara>
 										Built-in diversification, decentralized governance, and deflationary mechanisms
-										keep your asset's value protected and secure.
+										keep your assets' value protected and secure
 									</AboutPara>
 									{/* anchor link to DAO, deflation and safety section About section */}
 									<ButtonContainer>
@@ -445,10 +447,10 @@ const HomePage = () => {
 								</AboutImageParent>
 								<AboutTextWrapperContainer>
 									{/* anchor link to Reserve and supply About section */}
-									<AboutSectionHeader>Reserve Vault & Burns.</AboutSectionHeader>
+									<AboutSectionHeader>Reserve Vault & Burns</AboutSectionHeader>
 									<AboutPara>
-										Utilising a reserve vault of tokens that can be altered in supply to affect the
-										$VSL price to match the mutual fund.
+										Vessel utilizes a reserve vault that can be altered in supply to allow the
+										token's price to match the price action of the underlying mutual fund.
 									</AboutPara>
 									<ButtonContainer>
 										<InformationButtonAccent onClick={() => history.push('/About')}>

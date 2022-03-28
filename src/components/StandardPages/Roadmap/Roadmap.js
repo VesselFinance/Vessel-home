@@ -422,7 +422,7 @@ const RoadmapPage = () => {
 								</RoadmapTitle>
 								<RoadMapSubParaContainer four>
 									<RoadmapSubPara one>
-										<span style={{ color: '#51ECCD' }}>Vessel</span> yellowpaper, Whitepaper and
+										<span style={{ color: '#51ECCD' }}>Vessel</span> yellowpaper, whitepaper and
 										smart contract
 									</RoadmapSubPara>
 									<RoadmapSubPara one>Developer revisions and audits</RoadmapSubPara>
@@ -466,8 +466,7 @@ const RoadmapPage = () => {
 							<RoadmapDescription>
 								<RoadmapDescTitle>• ICO, seed funding, private sales:</RoadmapDescTitle>
 								<RoadmapDescPara>
-									Through conducting ICO, seed funding and private sales, we intend to aim to raising
-									$5,000,000.
+									Through conducting ICO, seed funding and private sales, we aim to raise $5,000,000.
 								</RoadmapDescPara>
 								<RoadmapDescTitle>• Third party audit of Vessel smart contract:</RoadmapDescTitle>
 								<RoadmapDescPara>

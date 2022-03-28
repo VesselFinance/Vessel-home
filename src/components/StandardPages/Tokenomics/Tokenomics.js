@@ -96,7 +96,7 @@ const AboutWrapperTextLeft = styled.div`
 
 const AboutWrapperTextRight = styled.div`
 	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-bottom: -50px;
 	position: relative;
 	@media ${bp.sm} {
 		width: 90%;
@@ -401,24 +401,13 @@ const TokenomicsPage = () => {
 				</AnimationOnScroll>
 
 				<BackgroundBlurRight src={pinkGlow} alt="Green Glow" />
-				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
-					<AboutSection>
-						<SectionWrapper>
-							<AboutWrapperTextRight>
-								<AboutTextWrapperContainer>
-									<AboutSectionHeader>Distribution</AboutSectionHeader>
-								</AboutTextWrapperContainer>
-							</AboutWrapperTextRight>
-							<ChartWrapper>
-								<TokenomicsChart />
-							</ChartWrapper>
-						</SectionWrapper>
-					</AboutSection>
-					<BackgroundBlurLeft src={pinkGlow} alt="Green Glow" />
-				</AnimationOnScroll>
-
 				<AboutSection>
 					<SectionWrapper>
+						<AboutWrapperTextRight>
+							<AboutTextWrapperContainer>
+								<AboutSectionHeader>Distribution</AboutSectionHeader>
+							</AboutTextWrapperContainer>
+						</AboutWrapperTextRight>
 						<TokenomicsTable>
 							<ChartLegendGrid>
 								<TableContent>

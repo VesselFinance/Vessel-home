@@ -304,11 +304,10 @@ const AboutPage = () => {
 							<AboutWrapperTextLeft>
 								<AboutImageParent></AboutImageParent>
 								<AboutTextWrapperContainer>
-									<AboutSectionHeader>What Is Vessel Finance?</AboutSectionHeader>
+									<AboutSectionHeader>What Is Vessel?</AboutSectionHeader>
 									<AboutPara>
-										Vessel Finance is a platform which offers the Vessel Protocol, one that is
-										designed to bring one of Traditional Finance’s markets’ most proven utilities,
-										mutual funds, onto the decentralized web.
+										Vessel is a platform to access Vessel Protocol, which brings mutual funds, one
+										of the most proven utilities in Traditional Finance, onto the decentralized web
 									</AboutPara>
 								</AboutTextWrapperContainer>
 							</AboutWrapperTextLeft>
@@ -339,9 +338,8 @@ const AboutPage = () => {
 										<BoxContent>
 											<BoxIconSpecial src={safetyIcon} />
 											<BoxHeader>Safety</BoxHeader>
-											To minimize risk and maximize return for our investors with built-in asset
-											diversification, decentralized governance and deflationary mechanisms with
-											guaranteed reflection (staking) rewards.
+											To minimize risk and maximize returns for our investors with built-in asset
+											diversification, decentralized governance, and deflationary mechanisms.
 										</BoxContent>
 									</BoxContentWrapper>
 								</AboutTextWrapperContainer>
@@ -362,12 +360,10 @@ const AboutPage = () => {
 									<AboutSectionHeader>A Synthetic Mutual Fund</AboutSectionHeader>
 									<AboutPara>
 										Most ETF tokens work by ”wrapping” a set of reserve assets. Our protocol,
-										however, emulates the price action of the assets with the help of token reserves
-										and token burns, making it synthetic.
-									</AboutPara>
-									<AboutPara>
-										This approach, paired with the usual benefits of mutual funds, allows the Vessel
-										Protocol to change the way you invest in the cryptocurrency world.
+										however, emulates the price action of the underlying assets with the help of
+										token reserves and token burns, thus making it synthetic. This approach, paired
+										with the usual benefits associated with mutual funds, allows Vessel Protocol to
+										change the way you invest in the cryptocurrency world.
 									</AboutPara>
 								</ContentTextWrapperContainer>
 							</AboutWrapperTextLeft>
@@ -386,11 +382,10 @@ const AboutPage = () => {
 								<ContentTextWrapperContainer>
 									<AboutSectionHeader>A Community Based Token</AboutSectionHeader>
 									<AboutPara>
-										The Vessel Protocol implements decentralized autonomous organization (DAO) in
-										the way that the protocol operates. Investors have the ability to vote and
-										decide on the reserve assets that the $VSL token are based on, giving investors
-										the power to influence the price action of the token and it's returns to a
-										higher degree.
+										Vessel Protocol implements a DAO as an integral part of its fund’s operations.
+										Investors therefore have full control over shaping the mutual fund through
+										voting. This gives investors the power to influence the price action of the
+										token which mirrors the mutual fund and its returns to a higher degree.
 									</AboutPara>
 								</ContentTextWrapperContainer>
 							</AboutWrapperTextRight>
@@ -430,10 +425,11 @@ const AboutPage = () => {
 								<ContentTextWrapperContainer>
 									<AboutSectionHeader>A Reserve Based Environment</AboutSectionHeader>
 									<AboutPara>
-										The Vessel Protocol runs of a strict, mathematically-ensured algorithm that
-										adjusts the pricing of the $VSL token to match the reserve assets. by adjusting
-										the size of the circulating supply, Supply Vault and Burn Vault. All this allows
-										for the most accurate net asset value price emulations in DeFi yet.
+										Vessel Protocol runs on a strict, mathematically backed algorithm that attempts
+										to match the price action of the fund, and thus the token, to the utmost degree.
+										This is accomplished by adjusting the circulating supply through the Supply and
+										Burn Vaults. This allows for one of the most accurate net asset value price
+										emulations in DeFi.
 									</AboutPara>
 								</ContentTextWrapperContainer>
 							</AboutWrapperTextRight>
@@ -454,44 +450,48 @@ const AboutPage = () => {
 											<BoxHeader>Diversification</BoxHeader>
 											Vessel's ability to combine a diversified portfolio into a single token
 											allows access to a wider variety of investments, reducing the risk of market
-											volatility affecting your returns.
+											volatility affecting user returns.
 										</BoxContent>
 										<BoxContent>
 											<BoxIconSpecial src={mathIcon} />
 											<BoxHeader>Mathematically Backed</BoxHeader>
-											Vessel protocol's entire logic is mathematically backed and proven. Every
+											Vessel Protocol’s entire logic is mathematically backed and proven. Every
 											algorithm within the contract has been rigorously tested to comply with the
-											protocol's intent.
+											protocol’s intent and is available to verify both through our yellowpaper
+											and open source smart contract.
 										</BoxContent>
 										<BoxContent>
 											<BoxIconSpecial src={stakingIcon} />
 											<BoxHeader>Automated Staking</BoxHeader>
-											Vessel's automatic staking mechanism allows investors to passively earn more
-											$VSL the longer they hold it. This type of staking strips away the need for
+											Vessel's automated staking mechanism allows investors to passively earn more
+											Vessel the longer they hold. This type of staking strips away the need for
 											investors to do anything other than hold, as rewards are automatically
 											transferred to their wallets.
 										</BoxContent>
 										<BoxContent>
 											<BoxIconSpecial src={controlIcon} />
 											<BoxHeader>Guaranteed Control of Fund Evolution</BoxHeader>
-											Vessel Protocol allows every single investor to vote on the reserve assets
-											the the $VSL token are based on. This give all investors equal opportunity
-											to make their own contributions on how the fund evolves.
+											Vessel Protocol allows all investors to vote on each of the fund’s
+											constituent assets that the token is based by. It also implements a voting
+											cap to give all investors an equal opportunity to make their own
+											contributions as to how the fund evolves and prevent large investors from
+											taking over.
 										</BoxContent>
 										<BoxContent>
 											<BoxIconSpecial src={lockIcon} />
 											<BoxHeader>Access to No One</BoxHeader>
-											The Vessel Team has incredibly strict and minimal access to the controls of
-											the Vessel Protocol, meaning that your funds will not be touched or meddled
-											with by anyone, INCLUDING us.
+											Vessel’s team has incredibly strict and limited access to the controls and
+											operations over the protocol. As such, users’ funds will not be interacted
+											with or influenced by anyone, especially the team.
 										</BoxContent>
 										<BoxContent>
 											<BoxIconSpecial src={growthIcon} />
 											<BoxHeader>An Evolving Suite of Products</BoxHeader>
-											Vessel intends on launching their V2 and V3 versions of the Vessel protocol
-											within the next two years, implementing mechanisms such as multiple asset
-											class investing and seigniorage, providing a plethora of investment
-											opportunities to all investors.
+											Vessel will release the V2 and V3 iterations of the Vessel Protocol over the
+											next 18 months. The upgrades will entail implementing mechanisms such as
+											multiple asset class investing and seigniorage shares. As a result, our
+											suite of products will provide users with a variety of new investment
+											opportunities.
 										</BoxContent>
 									</BoxContentWrapper>
 								</ContentTextWrapperContainer>
