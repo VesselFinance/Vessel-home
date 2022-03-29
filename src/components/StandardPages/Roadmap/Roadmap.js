@@ -355,9 +355,9 @@ const RoadmapPage = () => {
 									<AboutSectionHeader>Roadmap</AboutSectionHeader>
 									<AboutPara>
 										The Vessel Protocol aims to bring one of the most proven utilities on
-										traditional markets, mutual funds, onto the decentralized web. Our Roadmap marks
-										key milestones that we are aiming for in our constant development our the Vessel
-										Ecosystem.
+										traditional markets, mutual funds, onto the decentralized web. OVessel
+										Protocol’s roadmap marks key milestones for the Vessel ecosystem and a timeline
+										for when they will be achieved.
 									</AboutPara>
 								</AboutTextWrapperContainer>
 							</AboutWrapperTextLeft>
@@ -444,9 +444,9 @@ const RoadmapPage = () => {
 									Thorough internal testing and revisions of the logic and mathematics of smart
 									contract.
 								</RoadmapDescPara>
-								<RoadmapDescTitle>• Vessel.finance + app.vsl.finance:</RoadmapDescTitle>
+								<RoadmapDescTitle>• Vessel.finance + app.vessel.finance:</RoadmapDescTitle>
 								<RoadmapDescPara>
-									Build the vessel.finance website and app.vsl.finance dApp for public access.
+									Build the vessel.finance website and app.vessel.finance dApp for public access.
 								</RoadmapDescPara>
 							</RoadmapDescription>
 						</SectionWrapper>

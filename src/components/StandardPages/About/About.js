@@ -100,7 +100,7 @@ const AboutSectionHeader = styled.h1`
 `;
 
 const AboutImageParent = styled.div`
-	width: 80%;
+	width: 100%;
 	align-items: center;
 	justify-content: center;
 	display: flex;
@@ -137,6 +137,7 @@ const AboutWrapperTextLeft = styled.div`
 	padding-top: 50px;
 	padding-bottom: 50px;
 	position: relative;
+	justify-content: center;
 	@media ${bp.sm} {
 		width: 90%;
 		display: flex;
@@ -235,12 +236,12 @@ const BoxContentWrapper = styled.div`
 		grid-template-columns: repeat(3, 1fr);
 	}
 `;
-
 const BoxContent = styled.div`
 	display: flex;
 	flex-direction: column;
 	padding: 24px;
 	width: 80vw;
+	max-width: 450px;
 	background: rgba(0, 0, 0, 0.5);
 	backdrop-filter: blur(10px);
 	border-radius: 16px;
@@ -248,6 +249,7 @@ const BoxContent = styled.div`
 	border: 1px solid rgba(255, 255, 255, 0.5);
 	@media ${bp.sm} {
 		width: 36vw;
+		max-width: 410px;
 	}
 	@media ${bp.lg} {
 		width: 24vw;
@@ -282,8 +284,10 @@ const ContentTextWrapperContainer = styled.div`
 	align-items: flex-start;
 	max-width: 500px;
 	justify-content: center;
+	margin: 0 auto;
 	@media ${bp.sm} {
 		align-items: flex-start;
+		margin: initial;
 	}
 `;
 
@@ -457,7 +461,7 @@ const AboutPage = () => {
 					<AboutSection>
 						<SectionWrapper>
 							<AboutWrapperTextRight>
-								<ContentTextWrapperContainer>
+								<AboutTextWrapperContainer>
 									<AboutSectionHeader>Why Vessel?</AboutSectionHeader>
 									<BoxContentWrapper>
 										<BoxContent>
@@ -509,7 +513,7 @@ const AboutPage = () => {
 											opportunities.
 										</BoxContent>
 									</BoxContentWrapper>
-								</ContentTextWrapperContainer>
+								</AboutTextWrapperContainer>
 							</AboutWrapperTextRight>
 						</SectionWrapper>
 					</AboutSection>

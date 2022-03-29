@@ -5,6 +5,7 @@ import bp from '../../Theme/breakpoints';
 import twitter_img from '../../../assets/images/twitter.svg';
 import github_img from '../../../assets/images/github.svg';
 import discord_img from '../../../assets/images/discord.svg';
+import gitbook_img from '../../../assets/images/gitbook.svg';
 
 const StyledFooter = styled.footer`
 	display: flex;
@@ -136,6 +137,14 @@ const Footer = () => {
 							}}
 						/>
 						<SocialLinkImg src={discord_img} alt="discord" />
+						<SocialLinkImg
+							src={gitbook_img}
+							alt="gitbook"
+							onClick={e => {
+								e.preventDefault();
+								window.open('https://vessel-protocol.gitbook.io/vessel-whitepaper/', '_blank');
+							}}
+						/>
 					</FooterSocials>
 				</FooterDiv>
 				<FooterDiv>

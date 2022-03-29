@@ -18,6 +18,8 @@ const StyledNav = styled.nav`
 	padding-top: 8%;
 	border-bottom-right-radius: 20px;
 	border-bottom-left-radius: 20px;
+	border-bottom: 1px solid #ffffff66;
+	box-shadow: rgba(0, 0, 0, 0.65) -10px 15px 15px;
 `;
 
 const Divider = styled.hr`

@@ -207,6 +207,7 @@ const BoxContent = styled.div`
 	flex-direction: column;
 	padding: 24px;
 	width: 80vw;
+	max-width: 450px;
 	background: rgba(0, 0, 0, 0.5);
 	backdrop-filter: blur(10px);
 	border-radius: 16px;
@@ -214,6 +215,7 @@ const BoxContent = styled.div`
 	border: 1px solid rgba(255, 255, 255, 0.5);
 	@media ${bp.sm} {
 		width: 36vw;
+		max-width: 410px;
 	}
 	@media ${bp.lg} {
 		width: 24vw;
@@ -344,6 +346,21 @@ const DocumentationPage = () => {
 								<AboutTextWrapperContainer>
 									<AboutSectionHeader>Links</AboutSectionHeader>
 									<BoxContentWrapper>
+										<BoxContent>
+											<BoxHeader
+												onClick={e => {
+													e.preventDefault();
+													window.open(
+														'https://vessel-protocol.gitbook.io/vessel-whitepaper//',
+														'_blank',
+													);
+												}}
+											>
+												Protocol Docs
+												<BoxIcon src={linkIcon} />
+											</BoxHeader>
+											An introduction and overview of Vessel Protocol.
+										</BoxContent>
 										<BoxContent>
 											<BoxHeader
 												onClick={e => {
