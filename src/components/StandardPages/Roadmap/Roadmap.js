@@ -13,7 +13,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 
 const PageWrapper = styled.div`
-	padding: 0 28px 64px 28px;
+	padding: 0 10px 64px 10px;
 	max-width: 1560px;
 	margin: 0 auto;
 	height: 100%;

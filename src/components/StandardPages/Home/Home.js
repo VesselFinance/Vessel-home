@@ -22,7 +22,7 @@ import ScrollToTop from 'react-scroll-to-top';
 import { useHistory } from 'react-router';
 
 const PageWrapper = styled.div`
-	padding: 0 28px 64px 28px;
+	padding: 0 10px 64px 10px;
 	max-width: 1560px;
 	margin: 0 auto;
 	height: 100%;
@@ -342,7 +342,7 @@ const HomePage = () => {
 											onClick={e => {
 												e.preventDefault();
 												window.open(
-													'https://pancake.kiemtienonline360.com/#/swap?outputCurrency=0x679a84D59fE5656A980d7E7b2bfBC4A7D1Ce971e',
+													'https://pancake.kiemtienonline360.com/#/swap?outputCurrency=0x575779755f50805d24ed0e65c5cc3a8adc81513e',
 													'_blank',
 												);
 											}}
@@ -362,7 +362,7 @@ const HomePage = () => {
 						<SectionWrapper>
 							<AboutWrapperTextLeft>
 								<AboutImageParent>
-									<AboutImg src={vault} alt="vault" />
+									<AboutImg src={scales} alt="scales" />
 								</AboutImageParent>
 								<AboutTextWrapperContainer>
 									<AboutSectionHeader>Synthetic Mutual Fund</AboutSectionHeader>
@@ -372,9 +372,6 @@ const HomePage = () => {
 									</AboutPara>
 									<ButtonContainer>
 										{/* anchor link to synthetic mutual fund About section */}
-										<InformationButtonAccent onClick={() => history.push('/About')}>
-											Learn More
-										</InformationButtonAccent>
 									</ButtonContainer>
 								</AboutTextWrapperContainer>
 							</AboutWrapperTextLeft>
@@ -382,27 +379,23 @@ const HomePage = () => {
 					</AboutSection>
 				</AnimationOnScroll>
 
-				<BackgroundBlurLeft src={blueGlow} alt="blue Glow" />
+				<BackgroundBlurLeft src={blueGlow} alt="pink Glow" />
 
 				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
 					<AboutSection>
 						<SectionWrapper>
 							<AboutWrapperTextRight>
 								<AboutImageParent>
-									<AboutImg src={graph} alt="graphs" />
+									<AboutImg src={vault} alt="vault" />
 								</AboutImageParent>
 								<AboutTextWrapperContainer>
-									<AboutSectionHeader>Do Better Than The Market.</AboutSectionHeader>
+									{/* anchor link to Reserve and supply About section */}
+									<AboutSectionHeader>Reserve Vault & Burns</AboutSectionHeader>
 									<AboutPara>
-										Our protocol exposes you to a variety of top-tier tokens that are set to do
-										better than most
+										Vessel utilizes a reserve vault that can be altered in supply to allow the
+										token's price to match the price action of the underlying mutual fund
 									</AboutPara>
-									<ButtonContainer>
-										{/* anchor link to market analysis About section */}
-										<InformationButtonAccent onClick={() => history.push('/About')}>
-											Learn More
-										</InformationButtonAccent>
-									</ButtonContainer>
+									<ButtonContainer></ButtonContainer>
 								</AboutTextWrapperContainer>
 							</AboutWrapperTextRight>
 						</SectionWrapper>
@@ -425,37 +418,30 @@ const HomePage = () => {
 										keep your assets' value protected and secure
 									</AboutPara>
 									{/* anchor link to DAO, deflation and safety section About section */}
-									<ButtonContainer>
-										<InformationButtonAccent onClick={() => history.push('/About')}>
-											Learn More
-										</InformationButtonAccent>
-									</ButtonContainer>
+									<ButtonContainer></ButtonContainer>
 								</AboutTextWrapperContainer>
 							</AboutWrapperTextLeft>
 						</SectionWrapper>
 					</AboutSection>
 				</AnimationOnScroll>
 
-				<BackgroundBlurLeft src={pinkGlow} alt="pink Glow" />
+				<BackgroundBlurLeft src={pinkGlow} alt="blue Glow" />
 
 				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
 					<AboutSection>
 						<SectionWrapper>
 							<AboutWrapperTextRight>
 								<AboutImageParent>
-									<AboutImg src={scales} alt="scales" />
+									<AboutImg src={graph} alt="graphs" />
 								</AboutImageParent>
 								<AboutTextWrapperContainer>
-									{/* anchor link to Reserve and supply About section */}
-									<AboutSectionHeader>Reserve Vault & Burns</AboutSectionHeader>
+									<AboutSectionHeader>Do Better Than The Market</AboutSectionHeader>
 									<AboutPara>
-										Vessel utilizes a reserve vault that can be altered in supply to allow the
-										token's price to match the price action of the underlying mutual fund.
+										Our protocol exposes you to a variety of top-tier tokens that are set to do
+										better than most
 									</AboutPara>
 									<ButtonContainer>
-										<InformationButtonAccent onClick={() => history.push('/About')}>
-											Learn More
-										</InformationButtonAccent>
+										{/* anchor link to market analysis About section */}
 									</ButtonContainer>
 								</AboutTextWrapperContainer>
 							</AboutWrapperTextRight>

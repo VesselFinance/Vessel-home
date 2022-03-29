@@ -12,7 +12,7 @@ import ScrollToTop from 'react-scroll-to-top';
 import { useEffect } from 'react';
 
 const PageWrapper = styled.div`
-	padding: 0 28px 64px 28px;
+	padding: 0 10px 64px 10px;
 	max-width: 1560px;
 	margin: 0 auto;
 	height: 100%;
@@ -33,6 +33,7 @@ const AboutSection = styled.section`
 	justify-content: space-between;
 	border-radius: 50px;
 	position: relative;
+	margin-top: -70px;
 	background-color: transparent;
 `;
 
@@ -48,7 +49,7 @@ const SectionWrapper = styled.div`
 	background-color: transparent;
 `;
 
-const AboutSectionHeader = styled.h1`
+const AboutSectionFirstHeader = styled.h1`
 	max-width: 700px;
 	color: ${theme.color.text.primary};
 	margin-bottom: 16px;
@@ -57,6 +58,20 @@ const AboutSectionHeader = styled.h1`
 	@media ${bp.sm} {
 		text-align: left;
 		font-size: 50px;
+	}
+`;
+
+const AboutSectionHeader = styled.h1`
+	max-width: 700px;
+	margin-left: 30px;
+	color: ${theme.color.text.primary};
+	margin-bottom: 16px;
+	text-align: flex-start;
+	font-size: 36px;
+	@media ${bp.sm} {
+		text-align: left;
+		font-size: 50px;
+		margin-left: 0px;
 	}
 `;
 
@@ -182,12 +197,16 @@ const BoxContentWrapper = styled.div`
 	@media ${bp.xl} {
 		grid-template-columns: repeat(3, 1fr);
 	}
+	&:hover {
+		cursor: pointer;
+	}
 `;
 
 const BoxContent = styled.div`
 	display: flex;
 	flex-direction: column;
 	padding: 24px;
+	width: 80vw;
 	background: rgba(0, 0, 0, 0.5);
 	backdrop-filter: blur(10px);
 	border-radius: 16px;
@@ -234,7 +253,7 @@ const AboutSectionHero = styled.section`
 		margin-bottom: 0px;
 	}
 `;
-const WhitepaperPage = () => {
+const DocumentationPage = () => {
 	useEffect(() => {
 		window.scrollTo({ top: 0, behavior: 'instant' });
 	}, []);
@@ -266,10 +285,10 @@ const WhitepaperPage = () => {
 							<AboutWrapperTextLeft>
 								<AboutImageParent></AboutImageParent>
 								<AboutTextWrapperContainer>
-									<AboutSectionHeader>Documentation</AboutSectionHeader>
+									<AboutSectionFirstHeader>Documentation</AboutSectionFirstHeader>
 									<AboutPara>
-										Transparency and trust are of utmost importance to us, which is why all
-										documentation and code is free to read by anyone, at any time.
+										Transparency and trust are of utmost importance, which is why all documentation
+										and code is open source and accessible to anyone at any time.
 									</AboutPara>
 								</AboutTextWrapperContainer>
 							</AboutWrapperTextLeft>
@@ -286,7 +305,12 @@ const WhitepaperPage = () => {
 									<AboutSectionHeader>Papers</AboutSectionHeader>
 									<BoxContentWrapper>
 										<BoxContent>
-											<BoxHeader>
+											<BoxHeader
+												onClick={e => {
+													e.preventDefault();
+													window.open('/Vessel_Yellowpaper.pdf');
+												}}
+											>
 												Yellowpaper
 												<BoxIcon src={linkIcon} />
 											</BoxHeader>
@@ -294,7 +318,12 @@ const WhitepaperPage = () => {
 											Vessel contract.
 										</BoxContent>
 										<BoxContent>
-											<BoxHeader>
+											<BoxHeader
+												onClick={e => {
+													e.preventDefault();
+													window.open('/Vessel_Whitepaper.pdf');
+												}}
+											>
 												Whitepaper
 												<BoxIcon src={linkIcon} />
 											</BoxHeader>
@@ -316,7 +345,12 @@ const WhitepaperPage = () => {
 									<AboutSectionHeader>Links</AboutSectionHeader>
 									<BoxContentWrapper>
 										<BoxContent>
-											<BoxHeader>
+											<BoxHeader
+												onClick={e => {
+													e.preventDefault();
+													window.open('https://github.com/VesselFinance/', '_blank');
+												}}
+											>
 												Github
 												<BoxIcon src={linkIcon} />
 											</BoxHeader>
@@ -327,14 +361,14 @@ const WhitepaperPage = () => {
 												Discord
 												<BoxIcon src={linkIcon} />
 											</BoxHeader>
-											Join the community to ask questions, read updates and more.
+											[coming soon] - Join the community to ask questions, read updates and more.
 										</BoxContent>
 										<BoxContent>
 											<BoxHeader>
 												Audit
 												<BoxIcon src={linkIcon} />
 											</BoxHeader>
-											Access our audit certificate and documentation.
+											[coming soon] - Access our audit certificate and documentation.
 										</BoxContent>
 									</BoxContentWrapper>
 								</AboutTextWrapperContainer>
@@ -348,4 +382,4 @@ const WhitepaperPage = () => {
 	);
 };
 
-export default WhitepaperPage;
+export default DocumentationPage;

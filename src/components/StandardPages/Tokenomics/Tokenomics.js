@@ -11,7 +11,7 @@ import ScrollToTop from 'react-scroll-to-top';
 import { useEffect } from 'react';
 
 const PageWrapper = styled.div`
-	padding: 0 28px 64px 28px;
+	padding: 0 10px 64px 10px;
 	max-width: 1560px;
 	margin: 0 auto;
 	height: 100%;
@@ -51,7 +51,7 @@ const AboutSectionHeader = styled.h1`
 	max-width: 700px;
 	color: ${theme.color.text.primary};
 	margin-bottom: 16px;
-	text-align: flex-start;
+	text-align: left;
 	font-size: 36px;
 	@media ${bp.sm} {
 		text-align: left;
@@ -243,11 +243,12 @@ const ChartWrapper = styled.div`
 const TokenomicsTable = styled.div`
 	display: grid;
 	grid-template-columns: 1fr;
-	width: 105%;
+	width: 100%;
 	justify-content: center;
 	align-content: center;
-	margin-top: 50px;
+	margin-top: 20px;
 	padding-top: 10px;
+	padding-bottom: 10px;
 	padding-left: 5px;
 	padding-right: 5px;
 	background: rgba(0, 0, 0, 0.5);
@@ -260,9 +261,11 @@ const TokenomicsTable = styled.div`
 		width: 80%;
 		justify-content: center;
 		align-content: center;
-		margin-top: 50px;
+		margin-top: 20px;
 		padding-left: 30px;
 		padding-right: 30px;
+		padding-top: 30px;
+		padding-bottom: 30px;
 		background: rgba(0, 0, 0, 0.5);
 		backdrop-filter: blur(10px);
 		border-radius: 16px;
@@ -300,8 +303,10 @@ const TableContentTitle = styled.div`
 	padding: 4px 24px 4px 24px;
 	text-align: flex-start;
 	color: #ffffff;
+	font-size: 22px;
 	@media ${bp.sm} {
 		padding: 24px;
+		font-size: 16px;
 	}
 `;
 
@@ -390,9 +395,9 @@ const TokenomicsPage = () => {
 								<AboutTextWrapperContainer>
 									<AboutSectionHeader>Tokenomics</AboutSectionHeader>
 									<AboutPara>
-										The $VSL Token serves as Vessel's unit for investment. The distribution of these
-										units in both public and private ownership defines the structure of how Vessel
-										Protocol operates.
+										Vessel’s token serves as a unit of investment into Vessel Protocol. The
+										distribution of these units in both public and private ownership defines the
+										structure of how Vessel is to be disseminated.
 									</AboutPara>
 								</AboutTextWrapperContainer>
 							</AboutWrapperTextLeft>
@@ -478,7 +483,7 @@ const TokenomicsPage = () => {
 								<TableContent>
 									<GraphTab DotColor="#B42EC5"></GraphTab>
 								</TableContent>
-								<TableContentTitle>Liquid Reserves</TableContentTitle>
+								<TableContentTitle>Liquidity Reserves</TableContentTitle>
 								<TableContentPercent>5.00%</TableContentPercent>
 								<TableContentDesc>
 									10% unlocked at TGE and 5% unlocked every 3 months afterwards.

@@ -23,7 +23,7 @@ import ScrollToTop from 'react-scroll-to-top';
 import { useEffect } from 'react';
 
 const PageWrapper = styled.div`
-	padding: 0px 28px 64px 28px;
+	padding: 0 10px 64px 10px;
 	max-width: 1560px;
 	margin: 0 auto;
 	height: 100%;
@@ -73,7 +73,7 @@ const SectionWrapper = styled.div`
 	background-color: transparent;
 `;
 
-const AboutSectionHeader = styled.h1`
+const AboutSectionFirstHeader = styled.h1`
 	max-width: 700px;
 	color: ${theme.color.text.primary};
 	margin-bottom: 16px;
@@ -82,6 +82,20 @@ const AboutSectionHeader = styled.h1`
 	@media ${bp.sm} {
 		text-align: left;
 		font-size: 50px;
+	}
+`;
+
+const AboutSectionHeader = styled.h1`
+	max-width: 700px;
+	margin-left: 30px;
+	color: ${theme.color.text.primary};
+	margin-bottom: 16px;
+	text-align: flex-start;
+	font-size: 36px;
+	@media ${bp.sm} {
+		text-align: left;
+		font-size: 50px;
+		margin-left: 0px;
 	}
 `;
 
@@ -226,6 +240,7 @@ const BoxContent = styled.div`
 	display: flex;
 	flex-direction: column;
 	padding: 24px;
+	width: 80vw;
 	background: rgba(0, 0, 0, 0.5);
 	backdrop-filter: blur(10px);
 	border-radius: 16px;
@@ -304,10 +319,10 @@ const AboutPage = () => {
 							<AboutWrapperTextLeft>
 								<AboutImageParent></AboutImageParent>
 								<AboutTextWrapperContainer>
-									<AboutSectionHeader>What Is Vessel?</AboutSectionHeader>
+									<AboutSectionFirstHeader>What Is Vessel?</AboutSectionFirstHeader>
 									<AboutPara>
 										Vessel is a platform to access Vessel Protocol, which brings mutual funds, one
-										of the most proven utilities in Traditional Finance, onto the decentralized web
+										of the most proven utilities in Traditional Finance, onto the decentralized web.
 									</AboutPara>
 								</AboutTextWrapperContainer>
 							</AboutWrapperTextLeft>
@@ -357,12 +372,12 @@ const AboutPage = () => {
 									<AboutImg src={etf2d} alt="etf2d" />
 								</AboutImageParent>
 								<ContentTextWrapperContainer>
-									<AboutSectionHeader>A Synthetic Mutual Fund</AboutSectionHeader>
+									<AboutSectionFirstHeader>A Synthetic Mutual Fund</AboutSectionFirstHeader>
 									<AboutPara>
-										Most ETF tokens work by ”wrapping” a set of reserve assets. Our protocol,
-										however, emulates the price action of the underlying assets with the help of
-										token reserves and token burns, thus making it synthetic. This approach, paired
-										with the usual benefits associated with mutual funds, allows Vessel Protocol to
+										Most ETF tokens work by wrapping a set of reserve assets. Our protocol, however,
+										emulates the price action of the underlying assets with the help of token
+										reserves and token burns, thus making it synthetic. This approach, paired with
+										the usual benefits associated with mutual funds, allows Vessel Protocol to
 										change the way you invest in the cryptocurrency world.
 									</AboutPara>
 								</ContentTextWrapperContainer>
@@ -380,7 +395,7 @@ const AboutPage = () => {
 									<AboutImg src={community} alt="community" />
 								</AboutImageParent>
 								<ContentTextWrapperContainer>
-									<AboutSectionHeader>A Community Based Token</AboutSectionHeader>
+									<AboutSectionFirstHeader>A Community Based Token</AboutSectionFirstHeader>
 									<AboutPara>
 										Vessel Protocol implements a DAO as an integral part of its fund’s operations.
 										Investors therefore have full control over shaping the mutual fund through
@@ -402,7 +417,7 @@ const AboutPage = () => {
 									<AboutImg src={multifaceted} alt="multifaceted" />
 								</AboutImageParent>
 								<ContentTextWrapperContainer>
-									<AboutSectionHeader>A Multi-Faceted Returns Suite</AboutSectionHeader>
+									<AboutSectionFirstHeader>A Multi-Faceted Returns Suite</AboutSectionFirstHeader>
 									<AboutPara>
 										Returns are provided to Vessel investors in many ways, including automated
 										staking rewards, bounty rewards for Epoch initiation, deflationary rewards by
@@ -423,7 +438,7 @@ const AboutPage = () => {
 									<AboutImg src={blocks} alt="blocks" />
 								</AboutImageParent>
 								<ContentTextWrapperContainer>
-									<AboutSectionHeader>A Reserve Based Environment</AboutSectionHeader>
+									<AboutSectionFirstHeader>A Reserve Based Environment</AboutSectionFirstHeader>
 									<AboutPara>
 										Vessel Protocol runs on a strict, mathematically backed algorithm that attempts
 										to match the price action of the fund, and thus the token, to the utmost degree.
