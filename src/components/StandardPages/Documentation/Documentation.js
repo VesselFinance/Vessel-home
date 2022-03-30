@@ -306,26 +306,26 @@ const DocumentationPage = () => {
 								<AboutTextWrapperContainer>
 									<AboutSectionHeader>Papers</AboutSectionHeader>
 									<BoxContentWrapper>
-										<BoxContent>
-											<BoxHeader
-												onClick={e => {
-													e.preventDefault();
-													window.open('/Vessel_Yellowpaper.pdf');
-												}}
-											>
+										<BoxContent
+											onClick={e => {
+												e.preventDefault();
+												window.open('/Vessel_Yellowpaper.pdf');
+											}}
+										>
+											<BoxHeader>
 												Yellowpaper
 												<BoxIcon src={linkIcon} />
 											</BoxHeader>
 											A technical document outlining the mathematics and algorithms running the
 											Vessel contract.
 										</BoxContent>
-										<BoxContent>
-											<BoxHeader
-												onClick={e => {
-													e.preventDefault();
-													window.open('/Vessel_Whitepaper.pdf');
-												}}
-											>
+										<BoxContent
+											onClick={e => {
+												e.preventDefault();
+												window.open('/Vessel_Whitepaper.pdf');
+											}}
+										>
+											<BoxHeader>
 												Whitepaper
 												<BoxIcon src={linkIcon} />
 											</BoxHeader>
@@ -346,28 +346,28 @@ const DocumentationPage = () => {
 								<AboutTextWrapperContainer>
 									<AboutSectionHeader>Links</AboutSectionHeader>
 									<BoxContentWrapper>
-										<BoxContent>
-											<BoxHeader
-												onClick={e => {
-													e.preventDefault();
-													window.open(
-														'https://vessel-protocol.gitbook.io/vessel-whitepaper//',
-														'_blank',
-													);
-												}}
-											>
+										<BoxContent
+											onClick={e => {
+												e.preventDefault();
+												window.open(
+													'https://vessel-protocol.gitbook.io/vessel-whitepaper/',
+													'_blank',
+												);
+											}}
+										>
+											<BoxHeader>
 												Protocol Docs
 												<BoxIcon src={linkIcon} />
 											</BoxHeader>
 											An introduction and overview of Vessel Protocol.
 										</BoxContent>
-										<BoxContent>
-											<BoxHeader
-												onClick={e => {
-													e.preventDefault();
-													window.open('https://github.com/VesselFinance/', '_blank');
-												}}
-											>
+										<BoxContent
+											onClick={e => {
+												e.preventDefault();
+												window.open('https://github.com/VesselFinance/', '_blank');
+											}}
+										>
+											<BoxHeader>
 												Github
 												<BoxIcon src={linkIcon} />
 											</BoxHeader>
