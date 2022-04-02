@@ -342,12 +342,12 @@ const HomePage = () => {
 											onClick={e => {
 												e.preventDefault();
 												window.open(
-													'https://pancake.kiemtienonline360.com/#/swap?outputCurrency=0x7592d4C73c910867b84212C64FB0dD9815f5c0D6',
+													'https://pancake.kiemtienonline360.com/#/swap?outputCurrency=0x00f2967e9bC4Def83cD87407678D0C6035c19813',
 													'_blank',
 												);
 											}}
 										>
-											Buy $VSL
+											Buy VSL
 										</SecondaryButton>
 									</ButtonContainer>
 								</HeroTextWrapper>
