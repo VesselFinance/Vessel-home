@@ -6,6 +6,7 @@ const StyledButton = styled.button`
 	border-radius: 12px;
 	padding: 13px;
 	margin-left: 10px;
+	font-family: 'expletus-sans-regular';
 	transition: all 0.2s ease;
 	color: ${theme.color.text.primary};
 	font-weight: bold;

@@ -331,6 +331,22 @@ const DocumentationPage = () => {
 											</BoxHeader>
 											A general document of the Vessel Contract, it's proposal and it's vision.
 										</BoxContent>
+										<BoxContent
+											onClick={e => {
+												e.preventDefault();
+												window.open(
+													'https://vessel-protocol.gitbook.io/vessel-whitepaper/',
+													'_blank',
+												);
+											}}
+										>
+											<BoxHeader>
+												Gitbook
+												<BoxIcon src={linkIcon} />
+											</BoxHeader>
+											An introduction and overview of Vessel Protocol, adapted from the Vessel
+											whitepaper.
+										</BoxContent>
 									</BoxContentWrapper>
 								</AboutTextWrapperContainer>
 							</AboutWrapperTextRight>
@@ -346,21 +362,6 @@ const DocumentationPage = () => {
 								<AboutTextWrapperContainer>
 									<AboutSectionHeader>Links</AboutSectionHeader>
 									<BoxContentWrapper>
-										<BoxContent
-											onClick={e => {
-												e.preventDefault();
-												window.open(
-													'https://vessel-protocol.gitbook.io/vessel-whitepaper/',
-													'_blank',
-												);
-											}}
-										>
-											<BoxHeader>
-												Protocol Docs
-												<BoxIcon src={linkIcon} />
-											</BoxHeader>
-											An introduction and overview of Vessel Protocol.
-										</BoxContent>
 										<BoxContent
 											onClick={e => {
 												e.preventDefault();

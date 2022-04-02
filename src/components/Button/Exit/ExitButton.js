@@ -5,6 +5,7 @@ const StyledButton = styled.button`
 	background-color: transparent;
 	color: ${theme.color.background.secondary};
 	font-size: 32px;
+	font-family: 'expletus-sans-regular';
 	border: none;
 	border-radius: 50px;
 	padding: 8px 10px;
