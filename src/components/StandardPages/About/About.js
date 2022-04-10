@@ -399,7 +399,7 @@ const AboutPage = () => {
 									<AboutImg src={community} alt="community" />
 								</AboutImageParent>
 								<ContentTextWrapperContainer>
-									<AboutSectionFirstHeader>A Community Based Token</AboutSectionFirstHeader>
+									<AboutSectionFirstHeader>A Community-Based Token</AboutSectionFirstHeader>
 									<AboutPara>
 										Vessel Protocol implements a DAO as an integral part of its fund’s operations.
 										Investors therefore have full control over shaping the mutual fund through
@@ -442,7 +442,7 @@ const AboutPage = () => {
 									<AboutImg src={blocks} alt="blocks" />
 								</AboutImageParent>
 								<ContentTextWrapperContainer>
-									<AboutSectionFirstHeader>A Reserve Based Environment</AboutSectionFirstHeader>
+									<AboutSectionFirstHeader>A Reserve-Based Environment</AboutSectionFirstHeader>
 									<AboutPara>
 										Vessel Protocol runs on a strict, mathematically backed algorithm that attempts
 										to match the price action of the fund, and thus the token, to the utmost degree.

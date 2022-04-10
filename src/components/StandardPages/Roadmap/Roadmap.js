@@ -439,7 +439,7 @@ const RoadmapPage = () => {
 									Create the vessel yellowpaper and whitepaper, and develop the smart contract that
 									Vessel Protocol operates within.
 								</RoadmapDescPara>
-								<RoadmapDescTitle>• Developer Revisions:</RoadmapDescTitle>
+								<RoadmapDescTitle>• Developer revisions:</RoadmapDescTitle>
 								<RoadmapDescPara>
 									Thorough internal testing and revisions of the logic and mathematics of smart
 									contract.
