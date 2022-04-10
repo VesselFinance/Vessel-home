@@ -109,6 +109,40 @@ const AboutImageParent = styled.div`
 	}
 `;
 
+const AboutImageParentLeft = styled.div`
+	width: 100%;
+	max-width: 500px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	margin-bottom: 24px;
+	@media ${bp.sm} {
+		max-width: 400px;
+		align-items: center;
+		display: flex;
+	}
+	@media ${bp.lg} {
+		margin-left: 100px;
+	}
+`;
+
+const AboutImageParentRight = styled.div`
+	width: 100%;
+	max-width: 500px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	margin-bottom: 24px;
+	@media ${bp.sm} {
+		max-width: 400px;
+		align-items: center;
+		display: flex;
+	}
+	@media ${bp.lg} {
+		margin-right: 100px;
+	}
+`;
+
 const AboutImg = styled.img`
 	max-width: 60%;
 	margin-bottom: 24px;
@@ -361,9 +395,9 @@ const HomePage = () => {
 					<AboutSection>
 						<SectionWrapper>
 							<AboutWrapperTextLeft>
-								<AboutImageParent>
+								<AboutImageParentRight>
 									<AboutImg src={scales} alt="scales" />
-								</AboutImageParent>
+								</AboutImageParentRight>
 								<AboutTextWrapperContainer>
 									<AboutSectionHeader>Synthetic Mutual Fund</AboutSectionHeader>
 									<AboutPara>
@@ -385,9 +419,9 @@ const HomePage = () => {
 					<AboutSection>
 						<SectionWrapper>
 							<AboutWrapperTextRight>
-								<AboutImageParent>
+								<AboutImageParentLeft>
 									<AboutImg src={vault} alt="vault" />
-								</AboutImageParent>
+								</AboutImageParentLeft>
 								<AboutTextWrapperContainer>
 									{/* anchor link to Reserve and supply About section */}
 									<AboutSectionHeader>Reserve Vault & Burns</AboutSectionHeader>
@@ -408,9 +442,9 @@ const HomePage = () => {
 					<AboutSection>
 						<SectionWrapper>
 							<AboutWrapperTextLeft>
-								<AboutImageParent>
+								<AboutImageParentRight>
 									<AboutImg src={lock} alt="lock" />
-								</AboutImageParent>
+								</AboutImageParentRight>
 								<AboutTextWrapperContainer>
 									<AboutSectionHeader>Maximal Safety, Minimal Risk</AboutSectionHeader>
 									<AboutPara>
@@ -431,9 +465,9 @@ const HomePage = () => {
 					<AboutSection>
 						<SectionWrapper>
 							<AboutWrapperTextRight>
-								<AboutImageParent>
+								<AboutImageParentLeft>
 									<AboutImg src={graph} alt="graphs" />
-								</AboutImageParent>
+								</AboutImageParentLeft>
 								<AboutTextWrapperContainer>
 									<AboutSectionHeader>Do Better Than The Market</AboutSectionHeader>
 									<AboutPara>
