@@ -360,7 +360,7 @@ const HomePage = () => {
 									</AnimationOnScroll>
 									<AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true} delay="500">
 										<HeroPara>
-											The first deflationary Defi mutual fund based on synthetic reserves
+											The first deflationary DeFi mutual fund based on synthetic reserves
 										</HeroPara>
 									</AnimationOnScroll>
 									<ButtonContainer>
