@@ -123,6 +123,16 @@ const AboutImg = styled.img`
 	}
 `;
 
+const AboutParaHeader = styled.p`
+	color: ${theme.color.text.primary};
+	max-width: 700px;
+	text-align: flex-start;
+	font-size: 18px;
+	@media ${bp.sm} {
+		text-align: left;
+	}
+`;
+
 const AboutPara = styled.p`
 	color: ${theme.color.text.secondary};
 	max-width: 700px;
@@ -324,10 +334,10 @@ const AboutPage = () => {
 								<AboutImageParent></AboutImageParent>
 								<AboutTextWrapperContainer>
 									<AboutSectionFirstHeader>What Is Vessel?</AboutSectionFirstHeader>
-									<AboutPara>
+									<AboutParaHeader>
 										Vessel is a platform to access Vessel Protocol, which brings mutual funds, one
 										of the most proven utilities in Traditional Finance, onto the decentralized web.
-									</AboutPara>
+									</AboutParaHeader>
 								</AboutTextWrapperContainer>
 							</AboutWrapperTextLeft>
 						</SectionWrapper>
