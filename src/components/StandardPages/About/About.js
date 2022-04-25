@@ -3,6 +3,7 @@ import theme from '../../Theme/theme';
 import bp from '../../Theme/breakpoints';
 import Footer from '../../Navigation/Footer/Footer';
 import greenGlow from '../../../assets/images/GREEN_round.svg';
+import blueGlow from '../../../assets/images/BLUE_round.svg';
 import convenienceIcon from '../../../assets/svgs/convenience.svg';
 import safetyIcon from '../../../assets/svgs/safety.svg';
 import trustIcon from '../../../assets/svgs/eye.svg';
@@ -377,7 +378,7 @@ const AboutPage = () => {
 					</AboutSection>
 				</AnimationOnScroll>
 
-				<BackgroundBlurRight src={greenGlow} alt="Green Glow" />
+				<BackgroundBlurRight src={blueGlow} alt="Green Glow" />
 				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
 					<AboutSection>
 						<SectionWrapper>
@@ -422,7 +423,7 @@ const AboutPage = () => {
 					</AboutSection>
 				</AnimationOnScroll>
 
-				<BackgroundBlurRight src={greenGlow} alt="Green Glow" />
+				<BackgroundBlurRight src={blueGlow} alt="Green Glow" />
 				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
 					<AboutSection>
 						<SectionWrapper>
@@ -466,7 +467,7 @@ const AboutPage = () => {
 					</AboutSection>
 				</AnimationOnScroll>
 
-				<BackgroundBlurRight src={greenGlow} alt="Green Glow" />
+				<BackgroundBlurRight src={blueGlow} alt="Green Glow" />
 				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
 					<AboutSection>
 						<SectionWrapper>

@@ -2,7 +2,8 @@ import styled from 'styled-components';
 import theme from '../../Theme/theme';
 import bp from '../../Theme/breakpoints';
 import Footer from '../../Navigation/Footer/Footer';
-import darkBlueGlow from '../../../assets/images/PURPLE_round.svg';
+import greenGlow from '../../../assets/images/GREEN_round.svg';
+import blueGlow from '../../../assets/images/BLUE_round.svg';
 import linkIcon from '../../../assets/svgs/link.svg';
 import SSTarrow from '../../../assets/images/uiButtons/double-arrow-up.svg';
 import 'animate.css/animate.min.css';
@@ -298,7 +299,7 @@ const DocumentationPage = () => {
 					</AboutSectionHero>
 				</AnimationOnScroll>
 
-				<BackgroundBlurRight src={darkBlueGlow} alt="Green Glow" />
+				<BackgroundBlurRight src={greenGlow} alt="Green Glow" />
 				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
 					<AboutSection>
 						<SectionWrapper>
@@ -354,7 +355,7 @@ const DocumentationPage = () => {
 					</AboutSection>
 				</AnimationOnScroll>
 
-				<BackgroundBlurLeft src={darkBlueGlow} alt="Green Glow" />
+				<BackgroundBlurLeft src={blueGlow} alt="Green Glow" />
 				<AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
 					<AboutSection>
 						<SectionWrapper>

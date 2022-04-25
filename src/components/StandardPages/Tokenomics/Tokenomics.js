@@ -3,7 +3,7 @@ import theme from '../../Theme/theme';
 import TokenomicsChart from '../../Charts/TokenomicsChart';
 import bp from '../../Theme/breakpoints';
 import Footer from '../../Navigation/Footer/Footer';
-import pinkGlow from '../../../assets/images/PINK_round.svg';
+import greenGlow from '../../../assets/images/GREEN_round.svg';
 import SSTarrow from '../../../assets/images/uiButtons/double-arrow-up.svg';
 import 'animate.css/animate.min.css';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
@@ -405,7 +405,7 @@ const TokenomicsPage = () => {
 					</AboutSectionHero>
 				</AnimationOnScroll>
 
-				<BackgroundBlurRight src={pinkGlow} alt="Green Glow" />
+				<BackgroundBlurRight src={greenGlow} alt="Green Glow" />
 				<AboutSection>
 					<SectionWrapper>
 						<AboutWrapperTextRight>
